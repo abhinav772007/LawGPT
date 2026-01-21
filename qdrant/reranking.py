@@ -1,5 +1,5 @@
 from fastembed.rerank.cross_encoder import TextCrossEncoder
-from embeddings import get_stage1
+from qdrant.embeddings import get_stage1
 reranker = TextCrossEncoder(model_name='jinaai/jina-reranker-v1-turbo-en')
 
 def get_reranked_results(query, top_k=10):
