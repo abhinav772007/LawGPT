@@ -1,0 +1,14 @@
+[project]
+name = "lawgpt"
+version = "0.1.0"
+description = "Your own Lawyer!"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastembed>=0.7.4",
+    "google-genai>=1.59.0",
+    "gradio>=6.3.0",
+    "pandas>=2.3.3",
+    "pymongo>=4.16.0",
+    "qdrant-client>=1.16.2",
+]
