@@ -46,6 +46,22 @@ Accessing and understanding legal documents can be challenging for many individu
 - MongoDB instance
 - Qdrant instance (local or cloud)
 
+### Environment Setup
+
+1. **Gemini API Key**  
+   Sign up at [Google AI Studio](https://aistudio.google.com/apikey) to get your API key and update it in `main.py`.
+
+2. **MongoDB**  
+   Update the connection details in [mongodb/database.py](mongodb/database.py):
+   ```python
+   mongo_client = MongoClient("your-mongodb-connection-string")
+   ```
+
+3. **Qdrant**  
+   Set up Qdrant locally using Docker or use [Qdrant Cloud](https://cloud.qdrant.io/). Update the connection in [qdrant/embeddings.py](qdrant/embeddings.py):
+   ```python
+   qdrant_client = QdrantClient(url="your-qdrant-url")
+   ```
 ### Quick Start
 
 ```bash
@@ -63,24 +79,6 @@ Access LawGPT at **http://localhost:7860**
 
 ---
 
-## Configuration
-
-### Environment Setup
-
-1. **Gemini API Key**  
-   Sign up at [Google AI Studio](https://aistudio.google.com/apikey) to get your API key and update it in `main.py`.
-
-2. **MongoDB**  
-   Update the connection details in [mongodb/database.py](mongodb/database.py):
-   ```python
-   mongo_client = MongoClient("your-mongodb-connection-string")
-   ```
-
-3. **Qdrant**  
-   Set up Qdrant locally using Docker or use [Qdrant Cloud](https://cloud.qdrant.io/). Update the connection in [qdrant/embeddings.py](qdrant/embeddings.py):
-   ```python
-   qdrant_client = QdrantClient(url="your-qdrant-url")
-   ```
 
 ---
 
